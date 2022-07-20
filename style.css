@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+
+  width: 100%;
+  margin: auto;
+  overflow:hidden;
+  display: grid;
+  place-content: center;
+
+}
+
+.wrapper-down {
+
+  width: 100%;
+  margin: auto;
+  overflow:hidden;
+  display: grid;
+  place-content: center;
+
+}
+
+header {
+
+  /*background-color:transparent;*/
+  background: rgba(140,27,175,0.8);
+  width: 100%;
+  /*position: fixed; */
+  z-index: 5;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+
+}
+
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+
+}
+
+nav ul li a {
+
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+nav ul li:hover {
+
+  background: #3ead47;
+}
+
+.contenido {
+  padding-top: 80px;
+}
+
+
+div.contenido-miut {
+
+  background: rgba(242,226,226,0.5);
+  /*rgba(0,0,0,0.9)*/
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 0px;
+  top: 920px;
+
+}
+
+ul.redes{
+
+  float: center;
+
+}
+
+body{
+
+
+  /* Ubicación de la imagen */
+
+  background-image: url(miut-fondo.png);
+
+/* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+  background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+  background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+  background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+  background-size: cover;
+
+/* Se muestra un color de fondo mientras se está cargando la imagen
+
+de fondo o si hay problemas para cargarla */
+
+  background-color: #66999;
+
+}
+
+
+
+div.title-miut{
+
+  position: absolute;
+  /*left: -25%;
+  top: -32%;*/
+  left: 0px;
+  top: 180px;
+  transform: scale(1);
+
+}
+
+.contenedor {
+
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto 50px auto;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  gap: 35px;
+
+}
+
+.contenedor .pelicula {
+
+  margin: 50px auto 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: 1.5s;
+
+}
+
+.contenedor .pelicula .titulo {
+
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.contenedor .pelicula .poster {
+
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+
+}
+
+.paginacion {
+
+  position: fixed;
+  bottom: 0;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.container {
+
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  /*background: #e0e0e0;*/
+  background-color: rgba(224, 224, 224, 0.9);
+  color: #1d1d1d;
+
+}
+
+
+.contenedor .pelicula img:hover{
+
+transform: scale(1.2);
+
+}
+
+.ful-img{
+
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  /*position: fixed;*/
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 10%;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+
+}
+
+.ful-img span{
+
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.ful-img img{
+
+  width: 95%;
+  max-width: 600px;
+
+}
+
+div.final-creditos{
+
+width: 99%;
+/*align-items: ; */
+text-align: right;
+
+}
+
+div.presentacion{
+
+  width: 440px;
+  height: 300px;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
+  position: relative;
+  left: 95px;
+  text-align: center;
+  
+
+}
