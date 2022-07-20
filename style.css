@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -28,16 +29,19 @@ header {
   /*background-color:transparent;*/
   background: rgba(140,27,175,0.8);
   width: 100%;
-  /*position: fixed; */
+  position: fixed; 
   z-index: 5;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  top: 0;
+  /*position: sticky;
+  position: -webkit-sticky; /* Safari 
+  top: 0;*/
 
 }
 
 nav {
+
   float: left; /* Desplazamos el nav hacia la izquierda */
+
+
 }
 
 nav ul {
@@ -53,7 +57,7 @@ nav ul li {
 
 }
 
-nav ul li a {
+nav ul li a{
 
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
@@ -67,10 +71,58 @@ nav ul li:hover {
   background: #3ead47;
 }
 
+.develop {
+
+  display: block; /*block;  Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+  /*position: relative;*/
+
+  /*  
+    top: 17px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff; */
+}
+
+.ul-second {
+
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+    align-items: center;
+
+}
+
+.ul-second > li {
+
+    align-items: center;
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #3ead47;
+}
+
+.ul-second > li:hover {
+    background-color: #008849;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+
+/*
 .contenido {
   padding-top: 80px;
 }
-
+*/
 
 div.contenido-miut {
 
@@ -80,7 +132,7 @@ div.contenido-miut {
   height: 80px;
   position: absolute;
   left: 0px;
-  top: 920px;
+  top: 105%;/*920px;*/
 
 }
 
@@ -131,7 +183,7 @@ div.title-miut{
   /*left: -25%;
   top: -32%;*/
   left: 0px;
-  top: 180px;
+  top: 15%;/*180px;*/
   transform: scale(1);
 
 }
@@ -141,7 +193,6 @@ div.title-miut{
   width: 80%;
   max-width: 900px;
   margin: 50px auto 50px auto;
-  
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   gap: 35px;
@@ -172,6 +223,7 @@ div.title-miut{
 
 }
 
+/*
 .paginacion {
 
   position: fixed;
@@ -183,7 +235,7 @@ div.title-miut{
   gap: 20px;
   padding: 10px;
 
-}
+}*/
 
 .container {
 
@@ -217,7 +269,6 @@ transform: scale(1.2);
   justify-content: center;
   z-index: 99;
 
-
 }
 
 .ful-img span{
@@ -248,14 +299,14 @@ text-align: right;
 
 div.presentacion{
 
-  width: 440px;
-  height: 300px;
-  border-color: gray;
+  width: 42.4%;/*440px;*/
+  height: 325px;/*300px;*/
+  /*border-color: gray;
   border-width: 5px;
-  border-style: solid;
+  border-style: solid;*/
   position: relative;
-  left: 95px;
-  text-align: center;
+  top: -30px;
+  left: 4.5%;/*95px;*/
+  /*text-align: center;*/
   
-
 }
